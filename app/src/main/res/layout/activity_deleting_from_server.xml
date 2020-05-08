@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeletingFromServer">
+
+    <EditText
+        android:id="@+id/editTextDeleteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextDeletePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="310dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Enter Phone"/>
+
+    <EditText
+        android:id="@+id/editTextDeleteAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="470dp"
+        android:layout_marginStart="100dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Enter Age"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:textSize="20sp"
+        android:text="and / or" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:textSize="20sp"
+        android:text="and / or" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="610dp"
+        android:onClick="deleteButtonClicked"
+        android:text="Get Data" />
+</RelativeLayout>
