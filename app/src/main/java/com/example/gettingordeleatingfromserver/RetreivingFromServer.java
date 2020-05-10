@@ -2,14 +2,12 @@ package com.example.gettingordeleatingfromserver;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
@@ -22,7 +20,6 @@ import com.parse.ParseQuery;
 import com.shashank.sony.fancytoastlib.FancyToast;
 
 public class RetreivingFromServer extends AppCompatActivity {
-    private Button btnRetrieve;
     private EditText editTextRetrieveName, editTextRetrievePhone, editTextRetrieveAge;
 
     @Override
@@ -46,7 +43,7 @@ public class RetreivingFromServer extends AppCompatActivity {
         query.getFirstInBackground(new GetCallback<ParseObject>() {
             public void done(ParseObject data, ParseException e) {
                 if (e == null) {
-                    String objectId = data.getString("objectId");
+                    String objectId = data.getObjectId().toString();
                     String createdAt = data.getString("createdAt");
                     String name = data.getString("Name");
                     int age = Integer.parseInt(data.getString("Age"));
@@ -69,7 +66,7 @@ public class RetreivingFromServer extends AppCompatActivity {
                     popupWindow.setElevation(50);
                     // show the popup window
                     // which view you pass in doesn't matter, it is only used for the window tolken
-                    ((TextView)popupWindow.getContentView().findViewById(R.id.popUpText)).setText("Name    - " + name + "\n" + "Age     - " + age + "\nPhone   - "+ phone + "\nMessage - " + message);
+                    ((TextView)popupWindow.getContentView().findViewById(R.id.popUpText)).setText("ObjectId - " + objectId+ "\nName    - " + name + "\n" + "Age     - " + age + "\nPhone   - "+ phone + "\nMessage - " + message);
                     popupWindow.showAtLocation(popupView, Gravity.CENTER, 0, 0);
 
                     // dismiss the popup window when touched

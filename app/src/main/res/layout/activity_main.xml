@@ -4,73 +4,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/appbackground3"
     tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="36dp"
         android:text="This is a CRUD application"
+        android:textColor="#eff9f1"
         android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="264dp"
+        android:layout_marginTop="208dp"
+        android:background="#ff00f3"
         android:onClick="openSaveToServer"
         android:text="Save to server"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.007" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="396dp"
+        android:layout_marginTop="328dp"
+        android:background="#ea8f03"
         android:onClick="openRetrieveFromServer"
         android:text="Retrieve from server"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/button1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.031" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="528dp"
+        android:layout_marginTop="56dp"
+        android:background="#45e36f"
         android:onClick="openDeleteFromServer"
         android:text="Delete from server"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.052" />
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="442dp"
+        android:background="#f0f86e"
+        android:onClick="openUpdateInServer"
+        android:text="Update data in server"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="112dp"
         android:text="Choose a Button"
+        android:textColor="#ffffff"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />

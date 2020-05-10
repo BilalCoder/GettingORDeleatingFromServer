@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
+    android:background="#89eca8"
     android:layout_height="match_parent"
     tools:context=".RetreivingFromServer">
 
@@ -13,6 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="103dp"
         android:layout_marginTop="150dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
         android:ems="10"
         android:hint="Enter Name"
         android:inputType="textPersonName"
@@ -29,6 +32,8 @@
         android:layout_marginTop="310dp"
         android:ems="10"
         android:hint="Enter Phone"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
         android:inputType="phone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -41,6 +46,8 @@
         android:layout_marginTop="470dp"
         android:ems="10"
         android:hint="Enter Age"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -51,6 +58,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="240dp"
         android:text="and / or"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -65,6 +74,8 @@
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -75,6 +86,9 @@
         android:layout_marginBottom="73dp"
         android:onClick="retrieveButtonClicked"
         android:text="Get Data"
+        android:background="#ce4a22"
+        android:textSize="20sp"
+        android:textColor="#f9de0c"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -85,6 +99,8 @@
         android:layout_width="383dp"
         android:layout_height="82dp"
         android:layout_marginTop="32dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
         android:text="You can search using either of Name, Phone, or Age. For better results, try to provide maximum parameters"
         android:textSize="20sp"
         android:textAlignment="center"
